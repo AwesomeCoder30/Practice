@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: Students
+  version: '1.0'
+  description: Student API
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  '':
+    parameters: []
+  /v4/students:
+    get:
+      summary: ''
+      responses:
+        '200':
+          description: OK
+      requestBody: {}
+      parameters: []
+      operationId: ''
+    parameters: []
+components:
+  schemas: {}
+  securitySchemes:
+    API Key - 1:
+      type: oauth2
+      flows:
+        password:
+          tokenUrl: ''
+          refreshUrl: ''
+          scopes: []
